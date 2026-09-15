@@ -1,0 +1,47 @@
+cloud_id = "replace-with-cloud-id"
+zone     = "ru-central1-a"
+
+folder_ids = {
+  global              = "replace-with-global-platform-folder-id"
+  core_dev            = "replace-with-core-dev-folder-id"
+  core_prod           = "replace-with-core-prod-folder-id"
+  shared_network_dev  = "replace-with-shared-network-dev-folder-id"
+  shared_network_prod = "replace-with-shared-network-prod-folder-id"
+}
+
+github = {
+  organization    = "Snowstack-AI"
+  organization_id = "replace-with-github-organization-id"
+
+  repositories = {
+    global = {
+      name          = "tf-global-control-plane"
+      repository_id = "replace-with-repository-id"
+      environment   = "global-platform"
+    }
+
+    core_dev = {
+      name          = "tf-infrastructure"
+      repository_id = "replace-with-repository-id"
+      environment   = "core-dev"
+    }
+
+    core_prod = {
+      name          = "tf-infrastructure"
+      repository_id = "replace-with-repository-id"
+      environment   = "core-prod"
+    }
+
+    shared_network_dev = {
+      name          = "tf-shared-network"
+      repository_id = "replace-with-repository-id"
+      environment   = "shared-network-dev"
+    }
+
+    shared_network_prod = {
+      name          = "tf-shared-network"
+      repository_id = "replace-with-repository-id"
+      environment   = "shared-network-prod"
+    }
+  }
+}
