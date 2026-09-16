@@ -61,5 +61,3 @@ Broad bootstrap roles remain visible inputs. They make initial handoff possible,
 but must be replaced incrementally by service-specific roles in the permanent
 platform root. Add granular grants first, test the pipelines, and remove broad
 roles last to avoid locking the control plane out of its own IAM resources.
-
-See [docs/SOURCES.md](docs/SOURCES.md) for the official design sources.
